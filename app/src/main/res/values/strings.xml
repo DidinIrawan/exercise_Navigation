@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">exercise_Navigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bank_prompt">Choose a Bank</string>
+    <string-array name="bank_arrays">
+        <item>BCA</item>
+        <item>Mandiri</item>
+        <item>BRI</item>
+        <item>BNI</item>
+        <item>CIMB</item>
+        <item>BTPN</item>
+        <item>Permata</item>
+
+    </string-array>
+
+    <string name="account_number">Account Number</string>
+    <string name="name">Name</string>
+    <string name="next">next</string>
+    <string name="image_icon">TODO</string>
+    <string name="todo_home">TODO</string>
+    <string name="jution_candra_kirana">Didin Irawan</string>
+    <string name="amount">Amount</string>
+    <string name="done">DONE</string>
+    <string name="amount_confirmation">Amount Confirmation</string>
+    <string name="name_confirmation">Name Confirmation</string>
+    <string name="to">TO: ?</string>
+    <string name="send">SEND</string>
+</resources>
