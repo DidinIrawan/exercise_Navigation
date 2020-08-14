@@ -37,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Didin Irawan"
+                android:text="@string/didin_irawan"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="40dp" />
         </LinearLayout>
