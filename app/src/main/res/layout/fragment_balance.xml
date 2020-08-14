@@ -5,6 +5,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".screens.BalanceFragment">
 
     <com.google.android.material.card.MaterialCardView
@@ -14,27 +15,28 @@
         app:cardBackgroundColor="@android:color/holo_orange_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_gravity="center"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@drawable/ic_baseline_attach_money_24"/>
+                android:src="@drawable/ic_baseline_attach_money_24" />
+
             <TextView
-                android:layout_weight="1"
-                android:textAlignment="center"
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="56dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="300.00"
+                android:textAlignment="center"
                 android:textColor="@android:color/background_light"
-                android:text="300.00"/>
+                android:textSize="56dp" />
 
         </LinearLayout>
 

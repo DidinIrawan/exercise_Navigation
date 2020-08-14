@@ -26,4 +26,8 @@
     <string name="name_confirmation">Name Confirmation</string>
     <string name="to">TO: ?</string>
     <string name="send">SEND</string>
+    <string name="default_sent_to_person">Sent to Person</string>
+    <string name="default_account_number">account number</string>
+    <string name="default_amount">Rp. amount</string>
+    <string name="default_bank">bank</string>
 </resources>

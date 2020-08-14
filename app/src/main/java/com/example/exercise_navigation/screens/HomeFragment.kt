@@ -1,5 +1,6 @@
 package com.example.exercise_navigation.screens
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -14,7 +15,7 @@ import kotlinx.android.synthetic.main.fragment_home.*
 class HomeFragment : Fragment(),View.OnClickListener {
 
 
-    lateinit var navController : NavController
+    private lateinit var navController : NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +36,7 @@ class HomeFragment : Fragment(),View.OnClickListener {
         transfer_button.setOnClickListener(this)
         balance_button.setOnClickListener(this)
         transaction_history_button.setOnClickListener(this)
+
     }
 
     override fun onClick(v: View?) {
@@ -42,6 +44,7 @@ class HomeFragment : Fragment(),View.OnClickListener {
             transfer_button -> {navController.navigate(R.id.action_homeFragment_to_transactionActivity)}
             balance_button -> {navController.navigate(R.id.action_homeFragment_to_balanceFragment)}
             transaction_history_button -> {navController.navigate(R.id.action_homeFragment_to_historyTransactionFragment)}
+
         }
     }
 

@@ -5,12 +5,13 @@
     android:id="@+id/frameLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".screens.ConfirmationFragment">
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,42 +20,58 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
             <ImageView
-                android:layout_gravity="center"
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:src="@drawable/ic_baseline_check_circle_24"
-                android:contentDescription="@string/image_icon" />
+                android:layout_gravity="center"
+                android:contentDescription="@string/image_icon"
+                android:src="@drawable/ic_baseline_check_circle_24" />
 
             <TextView
-                android:id="@+id/nameConfirmation"
-                android:layout_width="match_parent"
+                android:id="@+id/sent_to_recipient_name_text"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:text="@string/name_confirmation"
-                android:textAlignment="center"
-                android:textSize="20sp"/>
+                android:layout_gravity="center"
+                android:text="@string/default_sent_to_person"
+                android:textSize="30sp" />
+
             <TextView
-                android:id="@+id/amountConfirmation"
-                android:layout_width="match_parent"
+                android:id="@+id/sent_to_recipient_account_text"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:text="@string/amount_confirmation"
-                android:textAlignment="center"
-                android:textSize="20sp"/>
+                android:layout_gravity="center"
+                android:text="@string/default_account_number"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/sent_to_recipient_amount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/default_amount"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sent_to_recipient_bank_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/default_bank"
+                android:textSize="22sp" />
 
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/doneButton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/done"
-                android:backgroundTint="@android:color/holo_green_light"
                 android:layout_margin="30dp"
-                android:id="@+id/doneButton">
-            </com.google.android.material.button.MaterialButton>
+                android:backgroundTint="@android:color/holo_green_light"
+                android:text="@string/done"></com.google.android.material.button.MaterialButton>
         </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
